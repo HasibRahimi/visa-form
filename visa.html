@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="ps">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>د ویزې ثبت‌نام پروژه</title>
+  <style>
+    body {
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: Tahoma, sans-serif;
+      padding: 10px;
+      direction: rtl;
+    }
+
+    h1 {
+      text-align: center;
+      color: darkblue;
+      margin-bottom: 30px;
+    }
+
+    .form-container {
+      max-width: 400px;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: darkgreen;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: green;
+    }
+  </style>
+</head>
+<body>
+  <h1>د ویزې لپاره ثبت‌نام</h1>
+  <div class="form-container">
+    <form action="#" method="post">
+      <label for="name">نوم:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="lname">تخلص:</label>
+      <input type="text" id="lname" name="lname" required>
+
+      <label for="dob">د زیږون نېټه:</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label for="email">بریښنالیک:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="passport">د پاسپورټ شمېره:</label>
+      <input type="text" id="passport" name="passport" required>
+
+      <button type="submit">ثبت کړه</button>
+    </form>
+  </div>
+</body>
+</html>
